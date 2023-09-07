@@ -1,0 +1,89 @@
+        /* Add your custom styles here */
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Style the textbox container (optional) */
+.textbox-container {
+    margin: 10px;
+  }
+  
+  /* Style the textbox */
+  .textbox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Remove the default outline on focus */
+  }
+  
+  /* Style the textbox when it's focused */
+  .textbox:focus {
+    border-color: #007bff; /* Change the border color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on focus */
+  }
+  
+  /* Style the placeholder text (optional) */
+  .textbox::placeholder {
+    color: #aaa; /* Customize the placeholder text color */
+  }
+  
+  /* Style the text inside the textbox (optional) */
+  .textbox-content {
+    color: #333; /* Customize the text color */
+  }
+
+  /* my-list.component.css */
+.add-button {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button text */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Show a pointer cursor on hover */
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .add-button:disabled {
+    background-color: #ccc; /* Disable button color */
+    cursor: not-allowed; /* Disable pointer on disabled state */
+  }
+
+  /* Style for the <ul> element */
+.my-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Style for the <li> elements */
+  .my-list li {
+    margin-bottom: 10px; /* Spacing between list items */
+    background-color: #f4f4f4; /* Background color */
+    padding: 10px; /* Padding inside list items */
+    border: 1px solid #ccc; /* Border around list items */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Hover effect for list items */
+  .my-list li:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+  }
+  

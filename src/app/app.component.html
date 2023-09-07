@@ -1,0 +1,86 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Web Page</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add custom CSS for styling -->
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to My To Do List App by Using Angular</h1>
+        <p>Your One-Stop Destination for Web Development</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container content">
+        <h2>About Us</h2>
+        <p>"Every day is a new opportunity to achieve your dreams.</p>
+
+        <div>
+          <h1>To-Do List</h1>
+          <div class="textbox-container">
+           
+          <input type="text" class="textbox" [(ngModel)]="newTodo" placeholder="Enter a new To-Do item (4-200 characters)" (keypress)="validateInput($event)">
+          <button (click)="addTodo()" class="add-button">Add</button>
+        </div>
+          <br>
+          <br>
+
+          <ul  class="my-list">
+            <li *ngFor="let todo of todos; let i = index" >
+              {{ todo }}
+              <button class="delete-button" (click)="removeTodo(i)">Delete</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2022 Developed by Azzak
+    </div>
+
+    <!-- Add Bootstrap JS scripts for functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<router-outlet></router-outlet>
